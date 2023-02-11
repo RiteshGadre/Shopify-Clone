@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/ad26818d844de4534fd78bb03028ca79?family=Shopify+Sans+Web+Medium" rel="stylesheet" type="text/css"/>
+    <link rel="icon" href="data:image/png;base64,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">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/ad26818d844de4534fd78bb03028ca79?family=Shopify+Sans+Web+Medium" rel="stylesheet" type="text/css"/>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'headbgcolor' : '#fbf7ed',
+            'headerbtncolor' : '#008060',
+          }
+        }
+      }
+    }
+    </script>
+    
+    <title>Shopify Clone</title> 
+</head>
+<body>
+
+  <header class="sticky top-0 flex flex-row justify-between bg-[#fbf7ed] px-8 py-4">
+    <div class="left-container flex flex-row items-center gap-8">
+      <a class="logo cursor-pointer">
+        <img src="./assets/images/shopify-main -logo.png" class="w-[120px]" alt="">
+      </a>
+      <nav class="hidden lg:flex flex-row font-bold">
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Start
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Sell
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Market
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Manage
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+      </nav>
+    </div>
+
+    <div class="right-container lg:flex flex-row items-center hidden lg:flex">
+      <nav class="flex flex-row font-bold">
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Pricing
+          <svg class="fill-current hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Learn
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <a class="flex flex-row items-end mx-5 cursor-pointer">
+          Log In
+          <svg class="fill-current hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+      </nav>
+
+      <button class="bg-[#008060] hover:bg-[#004c3f] rounded px-4 py-2 mr-8 ml-8">
+        <span class="text-white font-bold">Try For Free</span>
+      </button>
+    </div>
+
+    <div class="lg:hidden flex flex-row items-center">
+      <a href="" class="mx-8 font-bold">Log In</a>
+      <button class="p-4 lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:black">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>   
+
+
+  <!-- Hero Section -->
+  <section class="hero text-gray-600 body-font bg-[#fbf7ed] px-8 py-12">
+    <div class="container mx-auto flex px-5 py-8 lg:flex-row flex-col items-center">
+      <div class="lg:flex-grow lg:w-1/2 lg:pr-24 lg:pr-16 flex flex-col lg:items-start lg:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font leading-tight text-[48px] mb-4 text-[#004c3f] font-extrabold">The easiest way to sell 
+          <br class="hidden lg:inline-block">online in India
+        </h1>
+        <p class="mb-8 leading-tight text-[18px] text-[#82868a]">Try one of the most powerful platforms on the market for free. No technical knowledge needed.
+        <div class="flex flex-row flex-wrap gap-3 w-[100%] mb-8">
+          <input class="w-full mr-3 py-3 border rounded border-[#008060] outline-[#008060] p-4 lg:w-2/3 lg:mr-3 " placeholder="Enter your email address" type="text">
+          <!-- <input type="text" placeholder="Enter your email address." class="input input-bordered w-full max-w-xs" /> -->
+          <button class="w-full lg:w-32 bg-[#008060] hover:bg-[#004c3f] rounded px-4 py-2 ">
+            <span class="text-white font-bold">Try For Free</span>
+          </button>
+        </div>
+        <p class="text-[12px] text-[#26231f]">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+      </div>
+      <div class="lg:max-w-lg lg:w-full">
+        <img class="object-cover object-center rounded" alt="hero" src="./assets/images/herorightbg.webp">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Green Section -->
+  <section class="green flex flex-col gap-20 text-white body-font bg-[#004C3F] px-8 py-24">
+    <!-- Header Section-->
+    <header class="px-5 flex flex-col gap-3 lg:flex-row justify-between items-center text-center lg:text-left">
+      <div class="flex flex-col gap-3 w-3/4">
+        <h1 class="text-3xl">Bring your business online</h1>
+        <p>Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+      </div>
+      <div class="w-1/4 flex flex-row items-center justify-center">
+        <span>Explore More</span>
+        <span>
+          <i class="text-white ml-3 lg:w-auto lg:group-hover:translate-x-2 duration:300 transition text-white fa-solid fa-arrow-right-long"></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- Images Section -->
+    <div class="flex w-full flex-wrap gap-4 px-5 md:items-center justify-center xl:justify-between">
+      <div>
+        <img src="./assets/images/1.webp" alt="" class="max-w-[200px] lg:max-w-[264px]">
+        <h2 class="font-bold text-sm hover:underline cursor-pointer pt-3">FOOD & DRINK</h2>
+        <p>Blue Tokai</p>
+      </div>
+      <div>
+        <img src="./assets/images/2.webp" alt="" class="max-w-[200px] lg:max-w-[264px]">
+        <h2 class="font-bold text-sm hover:underline cursor-pointer pt-3">JEWELRY</h2>
+        <p>Quirksmith</p>
+      </div> 
+      <div>
+        <img src="./assets/images/3.webp" alt="" class="max-w-[200px] lg:max-w-[264px]">
+        <h2 class="font-bold text-sm hover:underline cursor-pointer pt-3">ELECTRONICS</h2>
+        <p>Crossbeats</p>
+      </div>
+      <div>
+        <img src="./assets/images/4.webp" alt="" class="max-w-[200px] lg:max-w-[264px]">
+        <h2 class="font-bold text-sm hover:underline cursor-pointer pt-3">Beauty</h2>
+        <p>Mccafeine</p>
+      </div>
+      <div>
+        <img src="./assets/images/5.webp" alt="" class="max-w-[200px] lg:max-w-[264px]">
+        <h2 class="font-bold text-sm hover:underline cursor-pointer pt-3">Fashion</h2>
+        <p>Bunnai</p>
+      </div>
+    </div>
+
+    <h2 class="px-5 text-[30px] text-center lg:text-left">Take the best path forward</h2>
+
+    <div class="px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="flex flex-col gap-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false" width="45" height="45"><defs><symbol id="spot-drag-and-drop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path d="M41 6a3 3 0 00-3-3H7a3 3 0 00-3 3v31a3 3 0 003 3h6a1 1 0 001-1v-1a1 1 0 00-1-1H7V12h31v2a1 1 0 001 1h1a1 1 0 001-1V6zM11 9H7V6h4zm3 0V6h24v3zm27 12v3a1 1 0 01-1 1h-1a1 1 0 01-1-1v-2h-3v-3h4a2 2 0 012 2zm-.87 10.67L27.5 25.81a1.5 1.5 0 00-2.1 1.68l3.13 14.33A1.5 1.5 0 0029.79 43H30a1.5 1.5 0 001.33-.8l3.07-5.8 5.61-2a1.5 1.5 0 00.14-2.78zm-7.29 2.1a1.5 1.5 0 00-.83.71l-1.43 2.69L29 29.81l6.53 3zM21 33h-3v-5h3zm3 7v1a1 1 0 01-1 1h-3a2 2 0 01-2-2v-4h3v3h2a1 1 0 011 1zm8-18h-5v-3h5zm-12-3h4v3h-3v3h-3v-4a2 2 0 012-2z"></path></svg></symbol></defs> <use xlink:href="#spot-drag-and-drop" fill="#C1F0D0"></use> </svg>
+        <h2>Start an online business</h2>
+        <p>Create a business, whether you've got a fresh idea or are looking for a new way to make money.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false" width="45" height="45"><defs><symbol id="spot-online-store"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path d="M41.75 8.67L38 3.11A2.5 2.5 0 0036 2H9a2.5 2.5 0 00-2 1.11L3.25 8.67A1.5 1.5 0 003 9.5v3a7.48 7.48 0 003 6v13A3.5 3.5 0 009.5 35H15v2.5a2.5 2.5 0 01-2.5 2.5H12a1.5 1.5 0 000 3h21a1.5 1.5 0 000-3h-.5a2.5 2.5 0 01-2.5-2.5V35h5.5a3.5 3.5 0 003.5-3.5v-13a7.48 7.48 0 003-6v-3a1.5 1.5 0 00-.25-.83zM9.3 5h26.4l2.66 4H6.64zm17.79 7a1.64 1.64 0 00-.09.5 4.5 4.5 0 01-9 0 1.64 1.64 0 00-.09-.5zM6 12h9.09a1.64 1.64 0 00-.09.5 4.5 4.5 0 01-9 0zm21.61 28H17.39a5.4 5.4 0 00.61-2.5V35h9v2.5a5.4 5.4 0 00.61 2.5zM36 31.5a.5.5 0 01-.5.5h-26a.5.5 0 01-.5-.5V19.85a7.41 7.41 0 001.5.15 7.49 7.49 0 006-3 7.47 7.47 0 0012 0 7.49 7.49 0 006 3 7.41 7.41 0 001.5-.15zM34.5 17a4.51 4.51 0 01-4.5-4.5 1.64 1.64 0 00-.09-.5H39v.5a4.51 4.51 0 01-4.5 4.5z"></path></svg></symbol></defs> <use xlink:href="#spot-online-store" fill="#C1F0D0"></use> </svg>
+        <h2>Move your business online</h2>
+        <p>Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false" width="45" height="45"><defs><symbol id="spot-inventory-synced"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path d="M42.5 11.82v28a1.5 1.5 0 01-3 0v-27L23 5.46 6.5 12.8v27a1.5 1.5 0 01-3 0v-28a1.5 1.5 0 01.89-1.37l18-8a1.5 1.5 0 011.22 0l18 8a1.5 1.5 0 01.89 1.39zM32.5 28a1.5 1.5 0 00-1.5 1.5A8.48 8.48 0 0117.05 36h2.45a1.5 1.5 0 000-3h-6a1.5 1.5 0 00-1.5 1.5v6a1.5 1.5 0 003 0v-2.32a11.47 11.47 0 0019-8.68 1.5 1.5 0 00-1.5-1.5zM14 29.5A8.48 8.48 0 0127.95 23H25.5a1.5 1.5 0 000 3h6a1.5 1.5 0 001.5-1.5v-6a1.5 1.5 0 00-3 0v2.32a11.47 11.47 0 00-19 8.68 1.5 1.5 0 003 0z"></path></svg></symbol></defs> <use xlink:href="#spot-inventory-synced" fill="#C1F0D0"></use> </svg>
+        <h2>Switch to Shopify</h2>
+        <p>Bring your business to Shopify, no matter which ecommerce platform you’re currently using.</p>
+      </div>
+      <div class="flex flex-col gap-3">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false" width="45" height="45"><defs><symbol id="spot-group"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path d="M12.5 21A6.5 6.5 0 106 14.5a6.5 6.5 0 006.5 6.5zm0-10A3.5 3.5 0 119 14.5a3.5 3.5 0 013.5-3.5zM30 21a8 8 0 10-8-8 8 8 0 008 8zm0-13a5 5 0 11-5 5 5 5 0 015-5zm13 25.5v4a1.5 1.5 0 01-3 0v-4c0-3.77-2.52-6.5-6-6.5h-7.5a6.51 6.51 0 00-6.5 6.5v4a1.5 1.5 0 01-3 0v-4a9.51 9.51 0 019.5-9.5H34c5.13 0 9 4.08 9 9.5zm-27-8a1.5 1.5 0 01-1.5 1.5h-4A5.51 5.51 0 005 32.5V36a1.5 1.5 0 01-3 0v-3.5a8.51 8.51 0 018.5-8.5h4a1.5 1.5 0 011.5 1.5z"></path></svg></symbol></defs> <use xlink:href="#spot-group" fill="#C1F0D0"></use> </svg>
+        <h2>Hire a Shopify expert</h2>
+        <p>Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Section End -->
+
+  <!-- Feature Section -->
+  <section class="feature flex flex-col gap-24 bg-white px-16 py-12">
+    <!-- Top section -->
+    <div class="px-5 w-full md:w-2/3 lg:w-2/3 mx-auto flex flex-col gap-4 text-center">
+      <h1 class="font-medium text-4xl">With you wherever you’re going</h1>
+      <p class="text-lg text-gray-600">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row-reverse gap-8 items-center text-center lg:text-left px-5">
+      <div class="w-full lg:w-1/2 flex flex-col gap-6 text-center lg:text-left ">
+        <h2 class="text-3xl">Sell everywhere</h2>
+        <p class="text-lg text-gray-600">Use one platform to sell products to anyone, anywhere in person with Point of Sale and online through your website, social media, and online marketplaces.</p>
+        <p class="text-[#008060] font-bold">Explore More Examples</p>
+      </div>
+      <div class="w-full lg:w-1/2 ">
+        <video autoplay="true" loop="true" src="./assets/video/sell-animation-desktop-1b186d853b04bce6dbc12bb63bd5bc4bc1ff60cd1a06fd12f85261c8acc66d0a.webm"></video>
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8 items-center justify-center text-center lg:text-left px-5">
+      <div class="w-full lg:w-1/2 flex flex-col gap-6">
+        <h2 class="text-3xl">Market your business</h2>
+        <p class="text-lg text-gray-600">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.</p>
+        <p class="text-[#008060] font-bold">Explore how to market your business</p>
+      </div>
+      <div class="w-full lg:w-1/2 ">
+        <img src="./assets/images/mobileuse.webp" alt="">
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row-reverse gap-8 items-center justify-center text-center lg:text-left px-5">
+      <div class="w-full lg:w-1/2 flex flex-col gap-6">
+        <h2 class="text-3xl">Manage everything</h2>
+        <p class="text-lg text-gray-600">Gain the insights you need to grow - use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
+        <p class="text-[#008060] font-bold">Explore More Examples</p>
+      </div>
+      <div class="w-full lg:w-1/2 ">
+        <img src="./assets/images/dashbord.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Section end -->
+
+  <!-- Explore Section -->
+  <section class="flex flex-col gap-12 bg-[#f3fcf4] px-20 py-12">
+    <h1 class="text-[#008060] font-extrabold text-3xl text-center lg:text-left">Explore more from Shopify India</h1>
+    <div class="flex flex-col lg:flex-row items-center justify-center lg:bg-white text-center lg:text-left">
+      <div class="w-full lg:w-1/2 bg-white flex flex-col gap-5 px-8 py-8">
+        <h2 class="font-bold">Start</h2>
+        <h1 class="text-gray-600 font-bold">Launch your store with the help of a Shopify Expert</h1>
+        <p class="text-gray-600 font-light">Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme to building a fully customized site.</p>
+        <p class="text-[#008060] font-bold">Browse Experts in India</p>
+      </div>
+      <div class="w-full lg:w-1/2 ">
+        <img src="./assets/images/yellow-person.webp" class="mx-auto" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Section end -->
+
+  <!-- Map Section -->
+  <section class="px-12 py-24">
+    <img src="./assets/images/world-map.webp" class="w-full lg:w-3/4 mx-auto" alt="">
+  </section>
+
+  <section class="flex flex-col gap-12 px-20 py-12">
+    <div class="bg-[#004c3f] flex flex-col lg:flex-row-reverse items-center justify-center text-center">
+      <div class="text-white w-full lg:w-1/2 flex flex-col gap-5 px-8 py-8">
+        <h2 class="font-bold lg:text-3xl">“Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”</h2>
+        <img src="./assets/images/alicia-logo.jpg" class="w-[120px] mx-auto" alt="">
+        <p class="font-thin">Alicia | Alicia Souza</p>
+      </div>
+      <div class="w-full lg:w-1/2 ">
+        <img src="./assets/images/alicia.jpg" class="mx-auto" alt="">
+      </div>
+    </div>
+
+    <!-- Work for companies -->
+    <div class="py-8 flex flex-wrap lg:flex-nowarap gap-6 justify-center lg:justify-between">
+      <img src="./assets/images/bajao.png" alt="">
+      <img src="./assets/images/johanjacob.png" alt="">
+      <img src="./assets/images/kylie.png" alt="">
+      <img src="./assets/images/nush.png" alt="">
+      <img src="./assets/images/yogabar.webp" alt="">
+      <img src="./assets/images/star-struck.png" alt="">
+      <img src="./assets/images/mcoffen.png" alt="">
+    </div>
+  </section>
+  <!-- Section end -->
+
+  
+  <section class="py-12 lg:py-0 bg-[#fbf7ed] px-12 flex flex-col gap-y-12 lg:flex-row">
+    <div class="w-full lg:w-1/2 flex flex-col gap-8 justify-center items-center">
+      <h2 class="text-3xl font-medium text-center lg:text-left">Get the help you need, every step of the way</h2>
+      <div class="flex flex-row flex-wrap gap-y-8 ">
+        <div class="sm:w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
+          <h2 class="font-bold">Shopify support</h2>
+          <p class="font-thin text-gray-600">Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.</p>
+          <p class="font-bold text-[#008060]">Contact support</p>
+        </div>
+        <div class="sm:w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
+          <h2 class="font-bold">Visit the Shopify App Store</h2>
+          <p class="font-thin text-gray-600">Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.</p>
+          <p class="font-bold text-[#008060]">Visit the Shopify App Store</p>
+        </div>
+        <div class="sm:w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
+          <h2 class="font-bold">Shopify Experts Marketplace</h2>
+          <p class="font-thin text-gray-600">Hire a Shopify expert to help you with everything from store setup to SEO.</p>
+          <p class="font-bold text-[#008060]">Explore the Shopify Experts Marketplace</p>
+        </div>
+      </div>
+    </div>
+      <div class="w-full lg:w-1/2">
+        <img src="./assets/images/helpdesk.webp" alt="">
+      </div>
+  </section>
+  <!-- section end -->
+
+  <!--  -->
+  <section class="px-20 py-40 bg-white text-center flex flex-col gap-4">
+    <h2 class="mx-auto text-3xl font-medium">Start your business journey with Shopify</h2>
+    <p class="text-gray-600 font-thin">Try Shopify for free, and explore all the tools and services you need to start, run, and grow your business.</p>
+    <div>
+      <button class="bg-[#008060] hover:bg-[#004c3f] rounded px-4 py-2 mr-8 ml-8">
+        <span class="text-white font-bold">Try For Free</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Main footer -->
+  <footer class="text-white bg-[#004c3f] body-font">
+    <div class="px-5 py-8 mx-auto font-bold">
+      <nav class="grid grid-cols-2 md:grid-cols-5 gap-8 list-none">
+        <li>
+          <a href="">About</a>
+        </li>
+        <li>
+          <a href="">Careers</a>
+        </li>
+        <li>
+          <a href="">Print and Media</a>
+        </li>
+        <li>
+          <a href="">Shopify Plus</a>
+        </li>
+        <li>
+          <a href="">Site Map</a>
+        </li>
+      </nav>
+    </div>
+    <div class="mx-5 border-t border-gray-200"></div>
+
+    <div class="container px-5 py-8 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-extrabold text-white tracking-widest text-sm mb-3">ONLINE STORE</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white">Sell Online</a>
+            </li>
+            <li>
+              <a class="text-white">Exapmles</a>
+            </li>
+            <li>
+              <a class="text-white">Website Builder</a>
+            </li>
+            <li>
+              <a class="text-white">online Retail</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-extrabold text-white tracking-widest text-sm mb-3">FEATURE 2</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white">Ecommerce webdsites</a>
+            </li>
+            <li>
+              <a class="text-white">Domain Names</a>
+            </li>
+            <li>
+              <a class="text-white">Themes</a>
+            </li>
+            <li>
+              <a class="text-white">Shopping Cart</a>
+            </li>
+            <li>
+              <a class="text-white">Ecommerce Hosting</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-extrabold text-white tracking-widest text-sm mb-3">FEATURE 3</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white">Mobile Commerce</a>
+            </li>
+            <li>
+              <a class="text-white">Ecommerce Software</a>
+            </li>
+            <li>
+              <a class="text-white">Online Store Builder</a>
+            </li>
+            <li>
+              <a class="text-white">Dropshipping</a>
+            </li>
+            <li>
+              <a class="text-white">Business</a>
+            </li>
+            <li>
+              <a class="text-white">Store Themes</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-extrabold text-white tracking-widest text-sm mb-3">POINT OF SALE</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white">Point of Sale</a>
+            </li>
+            <li>
+              <a class="text-white">Features</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-extrabold text-white tracking-widest text-sm mb-3">SUPPORT</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white">24/7 support</a>
+            </li>
+            <li>
+              <a class="text-white">Shopify Help Center</a>
+            </li>
+            <li>
+              <a class="text-white">Shopify Community</a>
+            </li>
+            <li>
+              <a class="text-white">API documentation</a>
+            </li>
+            <li>
+              <a class="text-white">Free stock photos</a>
+            </li>
+            <li>
+              <a class="text-white">Websites for sale</a>
+            </li>
+            <li>
+              <a class="text-white">Logo Maker</a>
+            </li>
+            <li>
+              <a class="text-white">Business name generator</a>
+            </li>
+            <li>
+              <a class="text-white">Research</a>
+            </li>
+            <li>
+              <a class="text-white">Legal</a>
+            </li>
+          </nav>
+        </div>
+
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-extrabold text-white tracking-widest text-sm mb-3">SHOPIFY</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-white">Contact</a>
+            </li>
+            <li>
+              <a class="text-white">Partner Program</a>
+            </li>
+            <li>
+              <a class="text-white">Affiliate Program</a>
+            </li>
+            <li>
+              <a class="text-white">App Developers</a>
+            </li>
+            <li>
+              <a class="text-white">Investors</a>
+            </li>
+            <li>
+              <a class="text-white">Blog Topics</a>
+            </li>
+            <li>
+              <a class="text-white">Community Events</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="mx-5 border-t border-gray-200">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+          <nav class="flex flex-row gap-3 list-none font-medium">
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">India</a></li>
+          </nav>
+        </div>
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    
+  </footer>
+
+ 
+</body>
+</html>
