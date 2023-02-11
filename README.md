@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Shopify%20Clone-Deployed-green)
 
-[Live Link](https://ritesh-dance-landing-page.netlify.app/)
+[Live Link](https://shopify-clone-rg.netlify.app/)
 
 ![](./assets/ss/FireShot%20Capture%20003%20-%20Shopify%20Clone%20-%20127.0.0.1.png)
 
